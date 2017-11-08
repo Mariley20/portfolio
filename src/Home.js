@@ -8,7 +8,7 @@ return (
     <div>
         <Row>
             <Col sm={3}>
-                <ListGroup>
+                <ListGroup className="ListGroup">
                     <ListGroupItem>Home</ListGroupItem>
                     <ListGroupItem>About</ListGroupItem>
                     <ListGroupItem>Portfolio</ListGroupItem>

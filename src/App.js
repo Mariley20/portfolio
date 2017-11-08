@@ -5,7 +5,7 @@ import {
     NavLink,
     Route,
     Switch} from 'react-router-dom';
-import './App.css';
+import './styles/App.css';
 import {Home} from './Home';
 // import {About} from 'About';
 // import {Portfolio} from './Portfolio';
