@@ -6,16 +6,16 @@ import './styles/App.css';
 export const Home = () => {
 return (
     <div>
-       <div class="row">
-    <div class="col-sm-3">
-        <ul class="ListGroup list-group">
-            <li class="list-group-item">Home</li>
-            <li class="list-group-item">About</li>
-            <li class="list-group-item">Portfolio</li>
-            <li class="list-group-item">Contact</li>
+       <div className="row">
+    <div className="col-sm-3">
+        <ul className="list-group">
+            <li className="list-group-item">Home</li>
+            <li className="list-group-item">About</li>
+            <li className="list-group-item">Portfolio</li>
+            <li className="list-group-item">Contact</li>
         </ul>
     </div>
-    <div class="col-sm-5">Homeee</div>
+    <div className="col-sm-5">Homeee</div>
 </div>
     </div>
 )
