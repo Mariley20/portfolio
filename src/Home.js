@@ -22,15 +22,7 @@ return (
                     <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github-alt  fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-facebook  fa-stack-1x fa-inverse"></i>
-                    </span>   
+                    </span>  
                 </div>
             </div>
         </div>
@@ -39,29 +31,29 @@ return (
 }
 export const NavBar = () => {
     return (
-        <div className="col-sm-2 nav-bar">
+        <div className="col-sm-2 nav-bar text-center">
                 <NavLink to="/home" className="list-group-item">
                     <h3>Home</h3>
                     <span>
-                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <i className="fa fa-home" aria-hidden="true"></i>
                     </span>
                 </NavLink>
                 <NavLink to="/about" className="list-group-item">
                     <h3>About</h3>
                     <span>
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                        <i className="fa fa-user-o" aria-hidden="true"></i>
                     </span>
                 </NavLink>
                 <NavLink to="/portfolio" className="list-group-item">
                     <h3>Portfolio</h3>
                     <span>
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        <i className="fa fa-briefcase" aria-hidden="true"></i>
                     </span>
                 </NavLink>
                 <NavLink to="/contact" className="list-group-item">
                       <h3>Contact</h3>
                     <span>
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
                     </span>
                 </NavLink>
         </div>
