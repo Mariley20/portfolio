@@ -15,13 +15,13 @@ return (
                 <h2>Condori Calla</h2>
                 <p>Frent End Developer/ Ingenieria de Sistemas</p>
                 <div>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                    <span className="fa-stack fa-lg">
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                     </span>
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-github-alt fa-stack-1x fa-inverse"></i>
+                    <span className="fa-stack fa-lg">
+                        <i className="fa fa-circle fa-stack-2x"></i>
+                        <i className="fa fa-github-alt fa-stack-1x fa-inverse"></i>
                     </span>  
                 </div>
             </div>

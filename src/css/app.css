@@ -44,9 +44,22 @@ body {
   width: calc(100% + 1px);
   cursor: pointer; }
 
-.list-group-item:hover {
-  background: #0087e0;
-  color: white; }
+a.list-group-item:focus,
+a.list-group-item:hover {
+  /* color: #555; */
+  color: white;
+  text-decoration: none;
+  background-color: #2b669a; }
+
+.list-group-item.active,
+.list-group-item.active:hover {
+  text-shadow: 0 -1px 0 #2b669a;
+  background-image: -webkit-linear-gradient(top, #337ab7 0, #2b669a 100%);
+  background-image: -o-linear-gradient(top, #337ab7 0, #2b669a 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
+  background-image: linear-gradient(to bottom, #337ab7 0, #2b669a 100%);
+  background-repeat: repeat-x;
+  border-color: #2b669a; }
 
 .fa-home,
 .fa-user-o,
