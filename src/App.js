@@ -12,8 +12,7 @@ import {Home} from './Home';
 // import {Resume} from './Resume';
 const App = ({myBoard, selected}) => {
 return (
-    <div className="container">
-        <Header />
+     <div className="container-fluid">
         <BrowserRouter>
             <Switch>
                     <Route exact path="/" render={() => <Home myBoard={myBoard} selected={selected} />}/>
@@ -25,13 +24,6 @@ return (
         </BrowserRouter>
     </div>
 )
-}
-const Header = () => {
-    return (
-        <div>
-            <img className="logo" src="https://phoenix-trello.herokuapp.com/images/logo-11ecccd65d1c7977997eb6f0bc0002ad.png?vsn=d" />
-        </div>
-    )
 }
 const mapToProps = ({myBoard, selected}) => ({myBoard, selected});
 
