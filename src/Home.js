@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 // import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
-import './index.css';
+import './css/app.css';
 // import { evaluateAddCard, addCard } from './actions';
 export const Home = () => {
 return (
     <div className="home-page text-center">
        <div className="row">
-            <div className=" col-md-offset-2 col-sm-2 nav-bar">
+            <div className=" col-md-offset-3 col-sm-2 nav-bar">
                 <div className="list-group-item" >Home</div>
                 <div className="list-group-item" >About</div>
                 <div className="list-group-item" >Portfolio</div>
