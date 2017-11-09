@@ -12,7 +12,7 @@
 }
 
 .information {
-    background: grey;
+    background: rgba(230, 229, 225, 0.9);
 }
 
 .list-group-item {
@@ -20,6 +20,7 @@
     color: rgb(167, 162, 162);
     background: none;
     width: calc(100% + 1px);
+    cursor: pointer;
 }
 
 .list-group-item:hover {

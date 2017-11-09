@@ -33,13 +33,14 @@ body {
   height: 100vh; }
 
 .information {
-  background: grey; }
+  background: rgba(230, 229, 225, 0.9); }
 
 .list-group-item {
   height: 25vh;
   color: #a7a2a2;
   background: none;
-  width: calc(100% + 1px); }
+  width: calc(100% + 1px);
+  cursor: pointer; }
 
 .list-group-item:hover {
   background: #0087e0;
