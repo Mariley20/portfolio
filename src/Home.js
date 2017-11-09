@@ -7,31 +7,8 @@ export const Home = () => {
 return (
     <div className="home-page text-center">
        <div className="row">
-            <div className=" col-md-offset-3 col-sm-2 nav-bar">
-                <div className="list-group-item" >
-                    <h3>Home</h3>
-                    <span>
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div className="list-group-item" >
-                    <h3>About</h3>
-                    <span>
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div className="list-group-item" >
-                    <h3>Portfolio</h3>
-                    <span>
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div className="list-group-item" >
-                      <h3>Contact</h3>
-                    <span>
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    </span>  
-                </div>
+            <div className=" col-md-offset-3">
+                <NavBar />
             </div>
             <div className="col-sm-5 information">
                 <h1>Mariley Erika</h1>
@@ -59,4 +36,34 @@ return (
         </div>
     </div>
 )
+}
+export const NavBar = () => {
+    return (
+        <div className="col-sm-2 nav-bar">
+                <NavLink to="/home" className="list-group-item">
+                    <h3>Home</h3>
+                    <span>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                </NavLink>
+                <NavLink to="/about" className="list-group-item">
+                    <h3>About</h3>
+                    <span>
+                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                    </span>
+                </NavLink>
+                <NavLink to="/portfolio" className="list-group-item">
+                    <h3>Portfolio</h3>
+                    <span>
+                        <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    </span>
+                </NavLink>
+                <NavLink to="/contact" className="list-group-item">
+                      <h3>Contact</h3>
+                    <span>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </span>
+                </NavLink>
+        </div>
+    )
 }
