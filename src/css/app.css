@@ -33,7 +33,9 @@ body {
   height: 100vh; }
 
 .information {
-  background: rgba(230, 229, 225, 0.9); }
+  background-image: url("https://cdn.pixabay.com/photo/2016/01/19/16/49/laptop-1149412_960_720.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .list-group-item {
   height: 25vh;
@@ -51,5 +53,11 @@ body {
 .fa-briefcase,
 .fa-envelope-o {
   font-size: 40px; }
+
+.fa-circle {
+  color: grey; }
+
+.fa-circle:hover {
+  color: white; }
 
 /*# sourceMappingURL=app.css.map */
