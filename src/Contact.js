@@ -46,23 +46,23 @@ return (
 const FormContact = () => {
     return(
         <div>
-            <div className="line-vertical"></div>
             <form className="form-group form-input">
-                <div>
+                <div className="line-vertical"></div>
+                <div className="input-group">
                     <input className="input-text" type="text" placeholder="Full Name" />
                     <span ></span>
                 </div>
 
-                <div>
+                <div className="input-group">
                     <input type="email" className="input-text" placeholder="Your Email" />
                 </div>
-                <div>
+                <div className="input-group">
                     <input type="tel" className="input-text" placeholder="your Phone" />
                 </div>
-                <div>
+                <div className="input-group">
                     <textarea className="input-text" placeholder="your message"></textarea>
                 </div>
-                <button type="submit">Send Message</button>
+                <button className="btn btn-primary" type="submit">Send Message</button>
             </form>
         </div>
     )

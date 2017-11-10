@@ -67,8 +67,12 @@ a.list-group-item:hover {
 .information .fa-circle:hover {
   color: white; }
 
+.form-group {
+  margin: 0; }
+
 .form-input,
 .contact-me {
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -78,15 +82,28 @@ a.list-group-item:hover {
   height: 10vh;
   background: #a7a2a2; }
 
+.form-input .input-group {
+  width: 100%; }
+
 .form-input input,
 .form-input textarea {
   border-radius: 3px;
   width: calc(100% + 1px);
-  margin: 20px 0;
+  margin-top: 6px;
+  margin-bottom: 5.1%;
   border: 1px solid #a7a2a2;
   padding: 10px;
   letter-spacing: 1px;
   transition: all 300ms linear; }
+
+.form-input input {
+  height: 6.7vh; }
+
+.form-input:nth-child(2) {
+  background: red; }
+
+.form-input textarea {
+  height: 17vh; }
 
 .form-input input:focus {
   outline: none; }
@@ -99,14 +116,14 @@ a.list-group-item:hover {
   color: white; }
 
 .contact-me span {
-  padding: 10% 0; }
+  padding-bottom: 10%; }
 
 .contact-me .fa-circle {
   font-size: 14vh;
   font-weight: 100px; }
 
 .contact-me p {
-  margin-top: 15%;
-  padding-top: 5px; }
+  margin-bottom: 10%;
+  padding-top: 10px; }
 
 /*# sourceMappingURL=app.css.map */
