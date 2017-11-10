@@ -14,7 +14,7 @@ import {Habilities} from './Habilities';
 import {Contact} from './Contact';
 import {ModalSpotify} from './ModalSpotify';
 // import {Resume} from './Resume';
-const App = ({biografy, selected, show}) => {
+const App = ({biografy, selected, show, sharedProps}) => {
 return (
      <div className="container-fluid">
         <BrowserRouter>
@@ -22,7 +22,7 @@ return (
                     <Route exact path="/" render={() => <Home />}/>
                     <Route path="/home" render={() => <Home  />}/>
                     <Route path="/about" render={() => <About NavBar={NavBar} Information={Information}  />}/>
-                    <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} Information={Information} ModalSpotify={ModalSpotify} show={show} />}/>
+                    <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} Information={Information} ModalSpotify={ModalSpotify} show={show} sharedProps={sharedProps} />}/>
                     <Route path="/habilities"  render={() => <Habilities NavBar={NavBar} Information={Information} />}/>
                     <Route path = "/contact" render = { () => <Contact NavBar={NavBar} Information={Information}/>} />
                     <Route path='/portfolio' render={() => <Redirect to="/home"/>}/>
@@ -32,6 +32,6 @@ return (
     </div>
 )
 }
-const mapToProps = ({biografy, selected, show}) => ({biografy, selected, show});
+const mapToProps = ({biografy, selected, show, sharedProps}) => ({biografy, selected, show});
 
 export default connect(mapToProps)(App);

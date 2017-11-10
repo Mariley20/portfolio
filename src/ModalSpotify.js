@@ -1,43 +1,41 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Button,Modal, ModalHeader, ModalBody, ModalFooter, ModalTitle} from 'react-bootstrap';
+import { Button, Tooltip, Overlay} from 'react-bootstrap';
 import './css/app.css';
-import { closeModal, showModal } from './actions';
-export const ModalSpotify = ({show}) => {
+import { closeModal, showModal, toggle } from './actions';
+export const ModalSpotify = ({show, sharedProps}) => {
 	
 //     getInitialState() {
 //     return { show: false };
 //   }
 //     render () {
 //          let close = () => this.setState({ show: false });
-
+   
     return (
-      <div className="modal-container" style={{ height: 200 }}>
-        <Button
-          bsStyle="primary"
-          bsSize="large"
-          onClick={showModal}
-          /* onClick={() => this.setState({ show: true })} */
-        >
-          Launch contained modal+ {show}
-        </Button>
-
-        <Modal
-          show={show}
-          onHide={closeModal}
-          aria-labelledby="contained-modal-title"
-        >
-          <Modal.Header closeButton>
-            <Modal.Title id="contained-modal-title">Contained Modal</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            Elit est explicabo ipsum eaque dolorem blanditiis doloribus sed id ipsam, beatae, rem fuga id earum? Inventore et facilis obcaecati.
-          </Modal.Body>
-          <Modal.Footer>
-            <Button onClick={closeModal}>Close</Button>
-          </Modal.Footer>
-        </Modal>
-      </div>
+        <div>
+            <div>
+                <div>
+                    <label>Conectar a Un Dispositivo</label>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </div>
+                <div>
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <label>Este Navegador <br/>
+                        <i class="fa fa-volume-up" aria-hidden="true"></i>
+                        Spotify Connect
+                        </label>
+                </div>
+            </div>
+            {show?
+            <div>
+                <Tooltip placement="top" className="in" id="tooltip-top">hola</Tooltip><br/>
+                <button onClick={toggle}>ver</button>
+            </div>
+                    :
+                
+                <button onClick={toggle}>ver</button>
+                }
+        </div>
     );
     // }
 }
