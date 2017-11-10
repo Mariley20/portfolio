@@ -10,3 +10,6 @@ return (
     <div className="col-sm-6"> Contact</div>
 </div>)
 }
+const FormContact = () => {
+    
+}

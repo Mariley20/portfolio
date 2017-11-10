@@ -41,7 +41,7 @@ export const NavBar = () => {
                 <NavLink to="/about" className="list-group-item">
                     <h3>About</h3>
                     <span>
-                        <i className="fa fa-user-o" aria-hidden="true"></i>
+                        <i className="glyphicon glyphicon-user" aria-hidden="true"></i>
                     </span>
                 </NavLink>
                 <NavLink to="/portfolio" className="list-group-item">
