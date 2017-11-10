@@ -4,7 +4,6 @@
         flex-direction: column;
         justify-content: space-around;
     }
-    
     .nav-bar,
     .information {
         padding: 0;
@@ -60,6 +59,6 @@
         color: grey;
     }
     
-    .fa-circle:hover {
+    .information .fa-circle:hover {
         color: white;
     }
