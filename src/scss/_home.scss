@@ -13,13 +13,15 @@
     
     .information {
         // background: rgba(230, 229, 225, 0.9);
+        height: 100vh;
         background-image: url('../img/laptop.jpg');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
     }
     
     .list-group-item {
-        height: 25vh;
+        height: 20vh;
         color: rgb(167, 162, 162);
         background: none;
         width: calc(100% + 1px);

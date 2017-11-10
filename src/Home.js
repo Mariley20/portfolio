@@ -50,6 +50,12 @@ export const NavBar = () => {
                         <i className="fa fa-briefcase" aria-hidden="true"></i>
                     </span>
                 </NavLink>
+                <NavLink to="/habilities" className="list-group-item">
+                      <h3>Habilities</h3>
+                    <span>
+                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                    </span>
+                </NavLink>
                 <NavLink to="/contact" className="list-group-item">
                       <h3>Contact</h3>
                     <span>

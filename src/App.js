@@ -9,6 +9,7 @@ import {
 import {Home, NavBar} from './Home';
 import {About} from './About';
 import {Portfolio} from './Portfolio';
+import {Habilities} from './Habilities';
 import {Contact} from './Contact';
 // import {Resume} from './Resume';
 const App = ({myBoard, selected}) => {
@@ -20,7 +21,8 @@ return (
                     <Route path="/home" render={() => <Home  />}/>
                     <Route path="/about" render={() => <About NavBar={NavBar} />}/>
                     <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} />}/>
-                    <Route path="/contact"  render={() => <Contact NavBar={NavBar} />}/>
+                    <Route path="/habilities"  render={() => <Habilities NavBar={NavBar} />}/>
+                    <Route path = "/contact" render = { () => <Contact NavBar={NavBar}/>} />
                     {/* <Route path="/resume"  render={() => <Resume myBoard={myBoard} selected={selected} />}/> */}
             </Switch>
         </BrowserRouter>
