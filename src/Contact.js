@@ -12,14 +12,26 @@ import {
 // import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './css/app.css';
 // import { evaluateAddCard, addCard } from './actions';
-export const Contact = ({NavBar}) => {
+export const Contact = ({NavBar, Information}) => {
 return (
 <div className="row">
+< div className = "col-sm-2 col-lg-2 remove-left remove-right" >
         <NavBar />
-    <div className="col-sm-4">
+    </div>
+    <div className="col-sm-4 col-lg-4  remove-left">
+        <Information />
     </div> 
-    <div className="col-sm-6 row">
-        <div className="col-sm-4 text-center contact-me">
+    <div className="col-sm-6 col-lg-6 row">
+        <ContactMe />
+        <div className="col-sm-8 col-lg-8">
+            <FormContact />
+        </div>
+    </div>
+</div>)
+}
+const ContactMe = () =>{
+    return(
+        <div className="col-sm-4 col-lg-4 text-center contact-me">
             < div className = "line-vertical" > </div>
             <span className="fa-stack fa-lg">
                 <i className="fa fa-circle fa-stack-2x"></i>
@@ -37,11 +49,7 @@ return (
             </span>
             <p>mariley2018@gmail.com</p>
         </div>
-        <div className="col-sm-8">
-            <FormContact />
-        </div>
-    </div>
-</div>)
+    )
 }
 const FormContact = () => {
     return(

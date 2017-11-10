@@ -1,3 +1,9 @@
+    .remove-left{
+        padding-left: 0;
+    }
+    .remove-right{
+            padding-right: 0;
+    }
     .nav-bar {
         background: rgba(255, 255, 255, 0.1);
         display: flex;
@@ -48,10 +54,10 @@
     }
     
     .fa-home,
-    .fa-user-o,
     .fa-briefcase,
-        .fa-envelope-o,
-     .glyphicon-user {
+    .fa-envelope,
+     .glyphicon-user,
+         .fa-magic {
         font-size: 40px;
     }
     

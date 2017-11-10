@@ -7,17 +7,19 @@ export const Home = () => {
 return (
     <div className="home-page text-center">
        <div className="row">
-            <div className=" col-md-offset-3">
+            <div className="col-md-offset-3 col-sm-offset-3 col-sm-2 col-lg-2 remove-left remove-right">
                 <NavBar />
             </div>
+            <div className="col-md-5 col-sm-5 col-lg-5 remove-left">
             <Information />
+            </div>
         </div>
     </div>
 )
 }
 export const Information = () => {
     return (
-        <div className="col-sm-5 information">
+        <div className="col-md-12 col-sm-12 col-lg-12 information">
                 <h1>Mariley Erika</h1>
                 <h2>Condori Calla</h2>
                 <p>Frent End Developer/ Ingenieria de Sistemas</p>
@@ -36,7 +38,7 @@ export const Information = () => {
 }
 export const NavBar = () => {
     return (
-        <div className="col-sm-2 nav-bar text-center">
+        <div className="col-md-12 col-sm-12 col-lg-12 nav-bar text-center">
                 <NavLink to="/home" className="list-group-item">
                     <h3>Home</h3>
                     <span>
@@ -58,13 +60,13 @@ export const NavBar = () => {
                 <NavLink to="/habilities" className="list-group-item">
                       <h3>Habilities</h3>
                     <span>
-                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                        <i className="fa fa-magic " aria-hidden="true"></i>
                     </span>
                 </NavLink>
                 <NavLink to="/contact" className="list-group-item">
                       <h3>Contact</h3>
                     <span>
-                        <i className="fa fa-envelope-o" aria-hidden="true"></i>
+                        <i className="fa fa-envelope" aria-hidden="true"></i>
                     </span>
                 </NavLink>
         </div>

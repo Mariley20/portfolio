@@ -6,7 +6,7 @@ import {
     Route,
     Switch} from 'react-router-dom';
 // import './styles/App.css';
-import {Home, NavBar} from './Home';
+import {Home, Information, NavBar} from './Home';
 import {About} from './About';
 import {Portfolio} from './Portfolio';
 import {Habilities} from './Habilities';
@@ -19,10 +19,10 @@ return (
             <Switch>
                     <Route exact path="/" render={() => <Home />}/>
                     <Route path="/home" render={() => <Home  />}/>
-                    <Route path="/about" render={() => <About NavBar={NavBar} />}/>
-                    <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} />}/>
-                    <Route path="/habilities"  render={() => <Habilities NavBar={NavBar} />}/>
-                    <Route path = "/contact" render = { () => <Contact NavBar={NavBar}/>} />
+                    <Route path="/about" render={() => <About NavBar={NavBar} Information={Information}  />}/>
+                    <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} Information={Information} />}/>
+                    <Route path="/habilities"  render={() => <Habilities NavBar={NavBar} Information={Information} />}/>
+                    <Route path = "/contact" render = { () => <Contact NavBar={NavBar} Information={Information}/>} />
                     {/* <Route path="/resume"  render={() => <Resume myBoard={myBoard} selected={selected} />}/> */}
             </Switch>
         </BrowserRouter>

@@ -12,6 +12,12 @@ body {
   background-size: cover;
   /* filter: brightness(0.4);*/ }
 
+.remove-left {
+  padding-left: 0; }
+
+.remove-right {
+  padding-right: 0; }
+
 .nav-bar {
   background: rgba(255, 255, 255, 0.1);
   display: flex;
@@ -55,10 +61,10 @@ a.list-group-item:hover {
   border-color: #2b669a; }
 
 .fa-home,
-.fa-user-o,
 .fa-briefcase,
-.fa-envelope-o,
-.glyphicon-user {
+.fa-envelope,
+.glyphicon-user,
+.fa-magic {
   font-size: 40px; }
 
 .fa-circle {
