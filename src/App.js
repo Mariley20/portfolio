@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from "redux-zero/react";
 import {
     BrowserRouter,
+    Redirect,
     NavLink,
     Route,
     Switch} from 'react-router-dom';
@@ -24,6 +25,7 @@ return (
                     <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} Information={Information} ModalSpotify={ModalSpotify} show={show} />}/>
                     <Route path="/habilities"  render={() => <Habilities NavBar={NavBar} Information={Information} />}/>
                     <Route path = "/contact" render = { () => <Contact NavBar={NavBar} Information={Information}/>} />
+                    <Route path='/portfolio' render={() => <Redirect to="/home"/>}/>
                     {/* <Route path="/resume"  render={() => <Resume biografy={biografy} selected={selected} />}/> */}
             </Switch>
         </BrowserRouter>

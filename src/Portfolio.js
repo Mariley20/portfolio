@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 // import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './css/app.css';
 // import { evaluateAddCard, addCard } from './actions';
-export const Portfolio = ({NavBar, Information, ModalSpotify}) => {
+export const Portfolio = ({NavBar, Information, ModalSpotify, show}) => {
 return (
     <div className="row">
         <div className="col-sm-2 col-lg-2 remove-left remove-right">
@@ -13,7 +13,7 @@ return (
             <Information />
         </div>
         <div className="col-md-7">
-            <ModalSpotify />
+            <ModalSpotify show={show} />
         </div>
     </div>)
 }

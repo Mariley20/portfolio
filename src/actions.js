@@ -5,7 +5,9 @@ export const closeModal = () => {
     })
 }
 export const showModal = () => {
+    console.log('show', store.getState().show)
     store.setState({
         show: true
-    })
+    });
+    console.log('newshow', store.getState().show)
 }

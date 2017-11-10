@@ -19,13 +19,12 @@ export const ModalSpotify = ({show}) => {
           onClick={showModal}
           /* onClick={() => this.setState({ show: true })} */
         >
-          Launch contained modal
+          Launch contained modal+ {show}
         </Button>
 
         <Modal
           show={show}
           onHide={closeModal}
-          container={this}
           aria-labelledby="contained-modal-title"
         >
           <Modal.Header closeButton>
