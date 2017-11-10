@@ -10,7 +10,14 @@ return (
             <div className=" col-md-offset-3">
                 <NavBar />
             </div>
-            <div className="col-sm-5 information">
+            <Information />
+        </div>
+    </div>
+)
+}
+export const Information = () => {
+    return (
+        <div className="col-sm-5 information">
                 <h1>Mariley Erika</h1>
                 <h2>Condori Calla</h2>
                 <p>Frent End Developer/ Ingenieria de Sistemas</p>
@@ -25,9 +32,7 @@ return (
                     </span>  
                 </div>
             </div>
-        </div>
-    </div>
-)
+    )
 }
 export const NavBar = () => {
     return (
