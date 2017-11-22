@@ -13,7 +13,10 @@ export const ModalSpotify = ({show, sharedProps}) => {
    
     return (
         <div>
+            {show?
             <div>
+                <Tooltip placement="top" className="in" id="tooltip-top">
+                    <div>
                 <div>
                     <label>Conectar a Un Dispositivo</label>
                     <i class="fa fa-question-circle" aria-hidden="true"></i>
@@ -26,9 +29,7 @@ export const ModalSpotify = ({show, sharedProps}) => {
                         </label>
                 </div>
             </div>
-            {show?
-            <div>
-                <Tooltip placement="top" className="in" id="tooltip-top">hola</Tooltip><br/>
+                </Tooltip><br/>
                 <button onClick={toggle}>ver</button>
             </div>
                     :
