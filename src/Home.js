@@ -19,9 +19,9 @@ return (
 export const Information = () => {
     return (
         <div className="col-md-12 col-sm-12 col-lg-12 information">
-                <h1>Mariley Erika</h1>
-                <h2>Condori Calla</h2>
-                <p>Frent End Developer/ Ingenieria de Sistemas</p>
+                <h1 className='title'>Mariley Erika</h1>
+                <h2 className='title'>Condori Calla</h2>
+                <p className='paragraph'>Frent End Developer/ Ingenieria de Sistemas</p>
                 <div>
                     <span className="fa-stack fa-lg">
                         <i className="fa fa-circle fa-stack-2x"></i>
