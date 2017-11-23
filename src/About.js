@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import {InformationMe} from './About_Information'
 // import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './css/app.css';
 // import { evaluateAddCard, addCard } from './actions';
@@ -9,8 +10,11 @@ return (
         <div className="col-sm-2 col-lg-2 remove-left remove-right">
                 <NavBar />
         </div>
-        <div className="col-md-3 col-sm-3 col-lg-3 remove-left">
+        <div className="col-sm-3 col-md-3 col-lg-3 remove-left">
             <Information />
+        </div>
+        <div className='col-sm-7 col-lg-7'>
+            <InformationMe />
         </div>
     </div>
 )

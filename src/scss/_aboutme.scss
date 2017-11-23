@@ -1,0 +1,17 @@
+@import '_variables';
+.title {
+    font-family: $fontTitle;
+}
+
+.paragraph {
+    font-family: $fontParagraph;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.aboutme {
+    padding-left: 20px;
+    padding-right: 40px;
+    background: rgba(255, 221, 173, 0.137)
+}
