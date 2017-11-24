@@ -18,5 +18,5 @@ return (
         <div className="col-md-7 content-portfolio">
             <Content work={work} />
         </div>
-    </div>)
+    </div>)   
 }

@@ -35,14 +35,14 @@ export const Skills = () => {
     
     <div className="SkillBar">
     <div id="Skill-JAVA">
-      <span className="Skill-Area ">JAVA </span>
+      <span className="Skill-Area ">Firebase </span>
       <span className="PercentText ">25%</span>
     </div>
   </div>
    
     <div className="SkillBar">
     <div id="Skill-PHP">
-      <span className="Skill-Area ">PHP </span>
+      <span className="Skill-Area ">ReactJS </span>
       <span className="PercentText ">50%</span>
     </div>
   </div>

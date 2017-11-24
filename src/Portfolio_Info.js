@@ -7,16 +7,17 @@ import {selectionWork} from './actions';
 export const Selection = () => {
     return (
         <div>
-            <p>buscar</p>
-            <ul inline>
-                <li>HTML CSS</li>
-                <li>HTML Bootstrap</li>
-                <li>HTML CSS jQuery</li>
-                <li>Reactjs Router</li>
-                <li>Reactjs Router Redux</li>
-                <li>Api Google</li>
-                <li>Firebase</li>
-                <li></li>
+            <div className="input-group">
+                    <input type="tel" className="input-text" placeholder="Buscar" />
+                </div>
+            <ul className='nav nav-pills  flex-container'>
+                <li className='list-item'>HTML CSS</li>
+                <li className='list-item' >HTML Bootstrap</li>
+                <li className='list-item' >HTML CSS jQuery</li>
+                <li className='list-item' >Reactjs Router</li>
+                <li className='list-item' >Reactjs Router Redux</li>
+                <li className='list-item' >Api Google</li>
+                <li className='list-item' >Firebase</li>
             </ul>
         </div>
     )
