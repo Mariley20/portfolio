@@ -12,7 +12,6 @@ import {About} from './About';
 import {Portfolio} from './Portfolio';
 import {Habilities} from './Habilities';
 import {Contact} from './Contact';
-import {ModalSpotify} from './ModalSpotify';
 // import {Resume} from './Resume';
 const App = ({biografy, selected, show, sharedProps}) => {
 return (
@@ -22,7 +21,7 @@ return (
                     <Route exact path="/" render={() => <Home />}/>
                     <Route path="/home" render={() => <Home  />}/>
                     <Route path="/about" render={() => <About NavBar={NavBar} Information={Information}  />}/>
-                    <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} Information={Information} ModalSpotify={ModalSpotify} show={show} sharedProps={sharedProps} />}/>
+                    <Route path="/portfolio"  render={() => <Portfolio NavBar={NavBar} Information={Information} show={show} sharedProps={sharedProps} />}/>
                     <Route path="/habilities"  render={() => <Habilities NavBar={NavBar} Information={Information} />}/>
                     <Route path = "/contact" render = { () => <Contact NavBar={NavBar} Information={Information}/>} />
                     <Route path='/portfolio' render={() => <Redirect to="/home"/>}/>

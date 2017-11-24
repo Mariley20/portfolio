@@ -10,7 +10,7 @@ export const InformationMe = () => {
                 Soy Desarrolladora FronEnd Jr, tambien estudie Ingenieria de Sistemas.
             </p>
             <p className='paragraph' >
-                Apasionada por lo digital y tecnológico en todas sus formas, conjuro mis habilidades 
+                Me apasiona lo digital y tecnológico en todas sus formas, conjuro mis habilidades 
                 de programar y creatividad para crear sitios web limpios, profesionales y funcionales
                 de calidad que sean escalables y accesibles.
             </p>
@@ -25,6 +25,16 @@ export const InformationMe = () => {
                 Me agrada el trabajo en equipo con la metodología ágil, como individualmente, manteniendo la calma 
                 ante situaciones bajo presión y manejo del estrés.
             </p>
+        </div>
+    )
+}
+export const invitation = () => {
+    return (
+        <div>
+        <h2>Realmente soy yo</h2>
+        <p>"Aquellos que están lo suficientemente locos como para creer que pueden cambiar el mundo,
+            son quienes lo cambian".</p>
+            <h3>Steve Jobs </h3>
         </div>
     )
 }

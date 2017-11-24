@@ -19,6 +19,8 @@ return (
 export const Information = () => {
     return (
         <div className="col-md-12 col-sm-12 col-lg-12 information">
+                <p className='paragraph'>Hola!! </p>
+                <p> Soy </p>
                 <h1 className='title'>Mariley Erika</h1>
                 <h2 className='title'>Condori Calla</h2>
                 <p className='paragraph'>Frent End Developer/ Ingenieria de Sistemas</p>
@@ -32,6 +34,9 @@ export const Information = () => {
                         <i className="fa fa-github-alt fa-stack-1x fa-inverse"></i>
                     </span>  
                 </div>
+                <p>Si lo puedes imaginar, lo puedo programar</p>
+                <h3>Gracias por encontrarme</h3>
+                <button>Descagar CV</button>
             </div>
     )
 }
