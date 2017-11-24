@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
-// import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
+import {Thumbnail} from 'react-bootstrap';
 import './css/app.css';
 
 export const selection = () => {
@@ -20,51 +20,25 @@ export const selection = () => {
         </div>
     )
 }
-export const content = () => {
+export const content = ({work}) => {
     return (
         <div className='portfolio'>
            <ul className='inlinie-block'>
-            <li className='item-work'></li>
+           {work.map((item, index) => {
+               return <Work key={index} item={item} index={index}/>
+           })}
             </ul>
         </div>
     )
 }
-const Product = ({item, index}) => {
-    return (
-
-        <div className='col-lg-10 col-md-10 col-xs-10 ha-products'>
-            <div className="ha-img">
-                <img src={item.img}/>
-                <NavLink
-                    className="ha-arrow"
-                    to="/viewproduct"
-                    onClick={() => changeSelectedFood(index)}><img className="img-arrow" src="img/arrow-right.png"/></NavLink>
-            </div>
-            <NavLink to="/viewproduct" onClick={() => changeSelectedFood(index)}>
-                <strong>{item.name}</strong>
-            </NavLink>
-
-            <span className='ha-price'>
-                <span>$</span>
-                <span >{(item.price).toFixed(2)}</span>
-            </span>
-            <button className='ha-btn' onClick={() => addCart(index)}>+ Add to cart</button>
-
-        </div>
-
+const Work = ({item, index}) => {
+return (
+    <li className='item-work'>
+         <Thumbnail src={item.img} alt="242x200">
+          <h3>{item.name}</h3>
+          <NavLink to='/viewWork' onClick={() => selectionWork(index)}>Ver más...</NavLink>
+        </Thumbnail>
+         </li>
     )
 
-}
-
-const FirstView = ({food}) => {
-    return (
-        <div className="container">
-            <div className="ha-ubication">
-                {food.map((item, index) => {
-                    return <Product key ={index} item={item} index={index}/>
-                })
-}
-            </div>
-        </div>
-    )
 }

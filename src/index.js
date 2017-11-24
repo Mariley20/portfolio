@@ -12,11 +12,7 @@ import registerServiceWorker from './registerServiceWorker';
 // import './styles/App.css';
 const Index = () => (
     <Provider store={store}>
-        <HashRouter>
-            <Switch>
-                    <Route exact path="/" component={App} />
-            </Switch>
-        </HashRouter>
+        <App />
     </Provider>
 );
 ReactDOM.render(<Index />, document.getElementById('root'));
