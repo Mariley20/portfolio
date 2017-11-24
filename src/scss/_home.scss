@@ -1,3 +1,4 @@
+@import '_variables';
 .remove-left {
     padding-left: 0;
 }
@@ -43,18 +44,18 @@ a.list-group-item:hover,
     /* color: #555; */
     color: white;
     text-decoration: none;
-    background-color: #2b669a;
+    background-color: $background2;
 }
 
 .list-group-item.active,
 .list-group-item.active:hover {
-    text-shadow: 0 -1px 0 #2b669a;
-    background-image: -webkit-linear-gradient(top, #337ab7 0, #2b669a 100%);
-    background-image: -o-linear-gradient(top, #337ab7 0, #2b669a 100%);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
-    background-image: linear-gradient(to bottom, #337ab7 0, #2b669a 100%);
+    text-shadow: 0 -1px 0 $background2;
+    background-image: -webkit-linear-gradient(top, $background2 0, $background2 100%);
+    background-image: -o-linear-gradient(top, $background2 0, $background2 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from($background2), to($background2));
+    background-image: linear-gradient(to bottom, $background2 0, $background2 100%);
     background-repeat: repeat-x;
-    border-color: #2b669a;
+    border-color: $background2;
 }
 
 .fa-home,

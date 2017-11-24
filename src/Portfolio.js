@@ -10,7 +10,7 @@ return (
                 <NavBar />
         </div>
         <div className="col-md-3 col-sm-3 col-lg-3 remove-left">
-            <Information />
+           
         </div>
         <div className="col-md-7">
         </div>

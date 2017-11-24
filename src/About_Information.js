@@ -28,9 +28,9 @@ export const InformationMe = () => {
         </div>
     )
 }
-export const invitation = () => {
+export const Invitation = () => {
     return (
-        <div>
+        <div className='invitation'>
         <h2>Realmente soy yo</h2>
         <p>"Aquellos que están lo suficientemente locos como para creer que pueden cambiar el mundo,
             son quienes lo cambian".</p>

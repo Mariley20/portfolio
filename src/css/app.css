@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Lato");
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Lato");
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Lato");
 * {
   margin: 0 auto;
   padding: 0;
@@ -51,17 +52,17 @@ a.list-group-item:hover {
   /* color: #555; */
   color: white;
   text-decoration: none;
-  background-color: #2b669a; }
+  background-color: #f7484e; }
 
 .list-group-item.active,
 .list-group-item.active:hover {
-  text-shadow: 0 -1px 0 #2b669a;
-  background-image: -webkit-linear-gradient(top, #337ab7 0, #2b669a 100%);
-  background-image: -o-linear-gradient(top, #337ab7 0, #2b669a 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#337ab7), to(#2b669a));
-  background-image: linear-gradient(to bottom, #337ab7 0, #2b669a 100%);
+  text-shadow: 0 -1px 0 #f7484e;
+  background-image: -webkit-linear-gradient(top, #f7484e 0, #f7484e 100%);
+  background-image: -o-linear-gradient(top, #f7484e 0, #f7484e 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7484e), to(#f7484e));
+  background-image: linear-gradient(to bottom, #f7484e 0, #f7484e 100%);
   background-repeat: repeat-x;
-  border-color: #2b669a; }
+  border-color: #f7484e; }
 
 .fa-home,
 .fa-briefcase,
