@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import {Skills} from './Skills'
 // import { Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './css/app.css';
 // import { evaluateAddCard, addCard } from './actions';
@@ -11,6 +12,9 @@ return (
         </div>
         <div className="col-md-3 col-sm-3 col-lg-3 remove-left">
             <Information />
+        </div>
+        <div>
+            <Skills />
         </div>
     </div>)
 }
