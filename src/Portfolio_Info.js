@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import {NavLink} from 'react-router-dom';
 import {Thumbnail} from 'react-bootstrap';
 import './css/app.css';
+import {selectionWork} from './actions';
 
-export const selection = () => {
+export const Selection = () => {
     return (
         <div>
             <p>buscar</p>
-            <ul className='inline-block'>
+            <ul inline>
                 <li>HTML CSS</li>
                 <li>HTML Bootstrap</li>
                 <li>HTML CSS jQuery</li>
@@ -20,25 +21,26 @@ export const selection = () => {
         </div>
     )
 }
-export const content = ({work}) => {
+export const Content = ({work}) => {
     return (
         <div className='portfolio'>
-           <ul className='inlinie-block'>
+        <Selection />
+        <div className='flex-container'>
            {work.map((item, index) => {
                return <Work key={index} item={item} index={index}/>
            })}
-            </ul>
+        </div>
         </div>
     )
 }
 const Work = ({item, index}) => {
 return (
-    <li className='item-work'>
-         <Thumbnail src={item.img} alt="242x200">
-          <h3>{item.name}</h3>
-          <NavLink to='/viewWork' onClick={() => selectionWork(index)}>Ver más...</NavLink>
-        </Thumbnail>
-         </li>
+    <div className='item-work'>
+
+         <img src={item.img} />
+        <h3>{item.name}</h3>
+        <NavLink to='/viewWork' onClick={() => selectionWork(index)}>Ver más...</NavLink>
+    </div>
     )
 
 }

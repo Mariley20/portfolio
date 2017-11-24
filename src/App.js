@@ -6,7 +6,7 @@ import {
     NavLink,
     Route,
     Switch,
-    HashRouter} from 'react-router-dom';
+    BrowserRouter} from 'react-router-dom';
 // import './styles/App.css';
 import {Home, Information, NavBar} from './Home';
 import {About} from './About';
