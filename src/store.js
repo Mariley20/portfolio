@@ -1,7 +1,7 @@
 import createStore from "redux-zero";
 let work = [
     {
-        name:'Chinese Food',
+        name:'japanese Food',
         mode: 'Colaborativo',
         description:'Una web dedica a la comida Japonesa, donde se da a conocer los más deliciosos platillos de Sushi',
         tecnologies:'React, js, Redux, HTML, CSS, Bootstrap 3',
@@ -11,7 +11,7 @@ let work = [
             
     },
 {
-    name: 'Chinese Food',
+    name: 'japanese Food',
     mode: 'Colaborativo',
     description: 'Una web dedica a la comida Japonesa, donde se da a conocer los más deliciosos platillos de Sushi',
     tecnologies: 'React, js, Redux, HTML, CSS, Bootstrap 3',
@@ -20,7 +20,7 @@ let work = [
     website: 'https://jani-123.github.io/Japanesefood/'
 },
 {
-    name: 'Chinese Food',
+    name: 'japanese Food',
     mode: 'Colaborativo',
     description: 'Una web dedica a la comida Japonesa, donde se da a conocer los más deliciosos platillos de Sushi',
     tecnologies: 'React, js, Redux, HTML, CSS, Bootstrap 3',
@@ -29,7 +29,7 @@ let work = [
     website: 'https://jani-123.github.io/Japanesefood/'
 },
 {
-    name: 'Chinese Food',
+    name: 'japanese Food',
     mode: 'Colaborativo',
     description: 'Una web dedica a la comida Japonesa, donde se da a conocer los más deliciosos platillos de Sushi',
     tecnologies: 'React, js, Redux, HTML, CSS, Bootstrap 3',
@@ -38,7 +38,7 @@ let work = [
     website: 'https://jani-123.github.io/Japanesefood/'
 },
 {
-    name: 'Chinese Food',
+    name: 'japanese Food',
     mode: 'Colaborativo',
     description: 'Una web dedica a la comida Japonesa, donde se da a conocer los más deliciosos platillos de Sushi',
     tecnologies: 'React, js, Redux, HTML, CSS, Bootstrap 3',
