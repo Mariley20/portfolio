@@ -12,6 +12,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    // position: fixed;
+    // outline: 1px solid;
 }
 
 .nav-bar,
@@ -72,4 +74,11 @@ a.list-group-item:hover,
 
 .information .fa-circle:hover {
     color: white;
+}
+.fixed
+{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    outline: 1px solid;
 }

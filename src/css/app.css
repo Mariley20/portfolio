@@ -13,6 +13,7 @@ body {
   background-image: url("../img/winter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   /* filter: brightness(0.4);*/ }
 
 .remove-left {
@@ -77,6 +78,12 @@ a.list-group-item:hover {
 .information .fa-circle:hover {
   color: white; }
 
+.fixed {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  outline: 1px solid; }
+
 .title {
   font-family: "Bad Script", cursive; }
 
@@ -99,6 +106,10 @@ a.list-group-item:hover {
 .flex-container {
   display: flex;
   flex-wrap: wrap; }
+
+.content-portfolio {
+  position: absolute;
+  right: 0; }
 
 .form-group {
   margin: 0; }
