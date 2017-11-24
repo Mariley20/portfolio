@@ -36,7 +36,7 @@ export const Information = () => {
                 </div>
                 <p>Si lo puedes imaginar, lo puedo programar</p>
                 <h3>Gracias por encontrarme</h3>
-                <button>Descagar CV</button>
+                <button>Descagar CV</button>sw
             </div>
     )
 }

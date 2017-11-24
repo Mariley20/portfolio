@@ -70,7 +70,7 @@ const FormContact = () => {
                 <div className="input-group">
                     <textarea className="input-text" placeholder="your message"></textarea>
                 </div>
-                <button className="btn btn-primary" type="submit">Send Message</button>
+                <a href='mailto:mariley2018@gmail.com' className="btn btn-primary" type="submit">Send Message</a>
             </form>
         </div>
     )
